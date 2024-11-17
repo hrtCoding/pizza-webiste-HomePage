@@ -1,0 +1,595 @@
+/* table of content - start
+==================================================================================================== 
+
+Project Name 	:  Pizzle - Fast Food & Pizza HTML Template
+File 			:  CSS Base
+Version 		:  1.0.0
+Author 			:  Evrothemes
+Developer		:  Hassan Rasu
+
+==================================================
+# Default Settings
+    01 - import fonts
+    02 - global css
+    03 - breadcrumb css
+    04 - pagination css
+    05 - btn top css
+
+# Sections
+    06 - header section
+	07 - hero section
+	08 - promo order
+	09 - best pizza
+	10 - pizza slider
+	11 - food menu
+	12 - double fun
+	13 - deliver area
+	14 - blog area
+	15 - subscribe area
+	16 - footer area
+	17 - menu page
+	18 - about page
+	19 - gallery page
+	20 - Notfound page
+	21 - Login page
+	22 - contact page
+	23 - product page
+	24 - product details page
+	25 - cart page
+	26 - checkout page
+	27 - single news page
+*/
+
+
+/*================================================
+01 - import fonts
+==================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&amp;display=swap');
+
+/*================================================
+02 - global css
+==================================================*/
+
+body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 30px;
+	color: #616161;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+a {
+	color: #000000;
+	font-size: 15px;
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	font-family: 'Rubik', sans-serif;
+}
+
+a:focus {
+	outline: medium none;
+	color: #000000;
+}
+
+a:hover {
+	color: inherit;
+	color: #000000;
+}
+
+input:focus,
+button:focus,
+select:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #000
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+p:last-child {
+	margin-bottom: 0
+}
+
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+.cta_btn {
+	display: inline-block;
+	padding: 13px 30px;
+	color: #fff;
+	font-weight: 500;
+	text-transform: uppercase;
+	overflow: hidden;
+	background: #f7b035;
+	border-radius: 40px;
+}
+
+.cta_btn i {
+	margin-right: 5px
+}
+
+.small_btn {
+	padding: 10px 25px
+}
+
+section {
+	padding: 100px 0
+}
+
+.site_heading {
+	text-align: center;
+	margin-bottom: 50px
+}
+
+.sub_title {
+	color: #f7b035;
+	font-weight: 700;
+	text-transform: capitalize;
+	font-size: 22px;
+	margin-bottom: 15px;
+	font-family: 'Delius Unicase', cursive;
+}
+
+.section_title {
+	font-weight: 700;
+	font-size: 44px;
+	font-family: 'Rubik', sans-serif;
+	line-height: 56px;
+}
+
+.spinner-master .spinner,
+.spinner-master.active .spinner {
+	background: #fff
+}
+
+.header_black .spinner-master .spinner,
+.header_black .spinner-master.active .spinner {
+	background: #000
+}
+
+
+
+/*================================================
+06 - header section
+==================================================*/
+
+.header_area {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	left: 0;
+	z-index: 9;
+	padding: 20px 0;
+}
+
+.header_area.header_black {
+	border-bottom: 1px solid #EDDFC6
+}
+
+.header_left {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+.site_logo img {
+	width: 160px
+}
+
+.mainmenu {
+	margin-left: 50px;
+}
+
+.mainmenu ul li {
+	display: inline-block;
+	padding: 0 13px;
+	position: relative
+}
+
+.mainmenu ul li a,
+.header_tools li a {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+	position: relative;
+	padding: 13px 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out
+}
+
+.mainmenu ul li>ul {
+	position: absolute;
+	top: 120%;
+	left: 0;
+	width: 220px;
+	background: #fff;
+	box-shadow: 0 12px 30px -2px rgb(0 0 0 / 10%);
+	border-radius: 5px;
+	padding: 10px 0;
+	visibility: hidden;
+	-webkit-transition: all .3s ease 0s;
+	transition: all .3s ease 0s;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+}
+
+.mainmenu ul li:hover>ul {
+	visibility: visible;
+	top: 100%;
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+}
+
+.mainmenu ul li>ul li {
+	display: block;
+	padding: 0
+}
+
+.mainmenu ul li>ul li a {
+	display: block;
+	padding: 7px 20px;
+	color: #000;
+	text-transform: capitalize;
+	line-height: 24px;
+}
+
+.mainmenu ul li>ul li a:after {
+	display: none
+}
+
+.mainmenu ul li>ul li a:hover {
+	padding-left: 25px
+}
+
+.mainmenu ul li a:after,
+.header_tools li a:after {
+	content: "";
+	background: #f7b035;
+	width: 0%;
+	right: 0;
+	left: auto;
+	bottom: 12px;
+	position: absolute;
+	height: 1px;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.mainmenu ul li a:hover,
+.header_tools li a:hover,
+.mainmenu li.active>a {
+	color: #f7b035
+}
+
+.mainmenu ul li:hover>a {
+	color: #f7b035
+}
+
+.mainmenu ul li a:hover:after,
+.header_tools li a:hover:after,
+.mainmenu li.active>a:after,
+.mainmenu ul li:hover>a:after {
+	width: 100%;
+	-webkit-transition: .4s;
+	transition: .4s;
+	right: auto;
+	left: 0;
+}
+
+.header_right {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+.header_tools li {
+	display: inline-block;
+	padding-left: 25px
+}
+
+.header_social li a,
+.header_tools li a {
+	color: #fff;
+	font-weight: 500;
+	text-transform: uppercase;
+	position: relative
+}
+
+.header_social li {
+	display: inline-block;
+	padding-left: 15px;
+}
+
+.header_social a {
+	font-size: 18px;
+	display: inline-block;
+	padding: 10px;
+}
+
+.header_social a:hover {
+	color: #f7b035;
+	-webkit-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.header_tools {
+	padding-left: 50px
+}
+
+.header_tools img {
+	width: 20px
+}
+
+.header_tools li:first-child {
+	padding: 0 30px
+}
+
+.cart_count span {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: #f7b035;
+	color: #000;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 15px;
+	font-size: 10px;
+	display: inline-block;
+	font-weight: 700;
+	right: -8px;
+	top: 2px;
+}
+
+.cart_count:after {
+	display: none
+}
+
+.header_black .mainmenu ul li a,
+.header_black .header_tools li a,
+.header_black .header_social li a {
+	color: #000
+}
+
+.header_black li>a:hover,
+.header_black .mainmenu ul li:hover>a,
+.header_black .mainmenu li.active>a {
+	color: #f7b035 !important
+}
+
+
+/*================================================
+07 - hero section
+==================================================*/
+
+.hero_area {
+	background: #121619;
+	padding: 200px 0 100px;
+	position: relative;
+	z-index: 1
+}
+
+.hero_area:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/chef-bg.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.3;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+}
+
+.hero_title {
+	line-height: 100px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 100px;
+	font-family: 'Rubik', sans-serif;
+}
+
+.hero_img {
+	position: relative;
+	z-index: 1
+}
+
+.hero_area .shape_1 {
+	position: absolute;
+	right: -5%;
+}
+
+.hero_area .shape_2 {
+	position: absolute;
+	left: 12%;
+	top: -60px;
+}
+
+.hero_area .shape_3 {
+	position: absolute;
+	left: -60px;
+	top: 60%;
+}
+
+.hero_area .shape_4 {
+	position: absolute;
+	right: 10%;
+	bottom: -5%;
+	-webkit-animation: bounce 3s infinite ease-in-out;
+	animation: bounce 3s infinite ease-in-out;
+}
+
+.hero_area .shape_2,
+.hero_area .shape_4,
+.promo_shape,
+.best_pizza_right>img.shape_17,
+.fun_shape_7,
+.fun_shape_4,
+.fun_shape_3,
+.fun_shape_1 {
+	-webkit-animation: bounce 3s infinite ease-in-out;
+	animation: bounce 3s infinite ease-in-out;
+}
+
+.hero_area .shape_5 {
+	position: absolute;
+	top: 26%;
+	left: 3%;
+	-webkit-animation: animateOne 15s infinite ease-in-out;
+	animation: animateOne 15s infinite ease-in-out;
+	z-index: -1
+}
+
+@-webkit-keyframes animateOne {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+	50% {
+		-webkit-transform: translateX(-100px);
+		transform: translateX(-100px);
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+
+@keyframes animateOne {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+	50% {
+		-webkit-transform: translateX(-100px);
+		transform: translateX(-100px);
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+
+@-webkit-keyframes bounce {
+	0% {
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+	50% {
+		-webkit-transform: translateY(10px);
+		transform: translateY(10px);
+	}
+	100% {
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+}
+
+@keyframes bounce {
+	0% {
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+	50% {
+		-webkit-transform: translateY(10px);
+		transform: translateY(10px);
+	}
+	100% {
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+}
+
+.hero_text .cta_btn {
+	margin-top: 20px
+}
+
+.hero_text .cta_btn:hover {
+	color: #fff
+}
+
+.scroll_pizza_1 {
+	position: absolute;
+	top: 92px;
+	left: 35px;
+	z-index: -1
+}
+
+.scroll_pizza_2 {
+	position: absolute;
+	bottom: 80px;
+	left: 32px;
+	z-index: -1;
+	-webkit-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
+.hero_text {
+	position: relative;
+	z-index: 1
+}
